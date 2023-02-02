@@ -3,31 +3,13 @@ import React, { Component } from 'react'
 class Form extends Component 
 {
   // On crée un objet "initialState" :
-  initialState = {
-    name: '',
-    job: '',
-  }
+  initialState = {name: '',  job: ''}
 
-  // On crée un objet "state" :
+  // On crée un objet "state" et lui attibuions la valeur de l'objet initialState :
   state = this.initialState
 
-  
-  inputChange = (event) => {
-    const { name, value } = event.target
-  
-    this.setState({
-      [name]: value,
-    })
-  }
-
-
-  submitForm = () => {
-    this.props.addData(this.state)
-    this.setState(this.initialState)
-  }
-
-
-  render() {
+  render() 
+  {
     const { name, job } = this.state;
   
     return (
@@ -55,6 +37,20 @@ class Form extends Component
         <input type="button" value="Add" onClick={this.submitForm} />
       </form>
     );
+  }
+
+  
+  // On crée une fonction fléchée inputChange:
+  inputChange = (event) => {
+    const { name, value } = event.target
+  
+    this.setState({[name]: value})
+  }
+
+  // On crée une fonction fléchée submitForm:
+  submitForm = () => {
+    this.props.addData(this.state)
+    this.setState(this.initialState)
   }
 }
 

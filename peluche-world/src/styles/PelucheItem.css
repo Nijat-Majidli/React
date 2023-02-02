@@ -1,0 +1,22 @@
+.peluche-item {
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.peluche-item-image {
+	height: 250px;
+	width: 250px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.peluche-item-image:hover {
+	height: 260px;
+	width: 260px;
+	border: 2px solid #31b472;
+}

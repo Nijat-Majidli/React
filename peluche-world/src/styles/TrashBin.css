@@ -1,0 +1,7 @@
+.trashBin {
+    margin-left: 10px;
+}
+
+.trashBin:hover {
+    cursor: pointer;
+}

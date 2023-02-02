@@ -1,13 +1,26 @@
-Installez Node.js :	
-https://nodejs.org/en/download/
+Installez Node.js :	https://nodejs.org/en/download/
 
 Installez React Developer Tools :
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
 
 Création le projet React
-1. On crée un nouveau projet React nommé "firstappli" :	npx create-react-app firstappli
-2. On se mets dans le projet "firstappli" :			cd firstappli
-3. On démarre le projet :						npm start
+1. On crée un nouveau projet React nommé "firstappli" :		npx create-react-app firstappli
+2. On se mets dans le projet "firstappli" :				cd firstappli
+3. On démarre le projet :							npm start
 4. Dans le navigateur ouvrez URL :					http://localhost:3000/
+5. On arrête le projet:							npm stop
 
+
+npm start
+    Starts the development server.
+
+npm run build
+    Bundles the app into static files for production.
+
+npm test
+    Starts the test runner.
+
+npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!

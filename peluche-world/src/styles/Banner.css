@@ -1,0 +1,54 @@
+.banner {
+	color: white;
+	background-color: #31b572;
+	padding: 20px;
+	border-bottom: solid 3px black;
+	display: flex;
+	flex-direction: row;
+	align-items: center; 
+}
+
+.basketContainer {
+	width: 40%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.basketContainer:hover {
+	cursor: pointer;
+}
+
+.basket {
+	height: 45px;
+	width: 45px;
+	margin-left: 20px;
+}
+
+.logoContainer {
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	animation: logo 3s linear 0s 1 normal forwards;
+	-webkit-animation: logo 3s linear 0s 1 normal forwards;
+}
+
+@keyframes logo 
+{
+	0% { transform: translateX(300px) ; -webkit-transform: translateX(300px) ; -moz-transform: translateX(300px) ; -ms-transform: translateX(300px) ; -o-transform: translateX(300px) ; }
+    50%   { transform: translateX(0) ; -webkit-transform: translateX(0) ; -moz-transform: translateX(0) ; -ms-transform: translateX(0) ; -o-transform: translateX(0) ; }
+	75% { transform: scale(0.75) ; -webkit-transform: scale(0.75) ; -moz-transform: scale(0.75) ; -ms-transform: scale(0.75) ; -o-transform: scale(0.75) ; }
+	100% { transform: scale(1) ; -webkit-transform: scale(1) ; -moz-transform: scale(1) ; -ms-transform: scale(1) ; -o-transform: scale(1) ; }
+}
+
+.title {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-shadow : 2px 2px black;
+}
+
+.logo {
+	height: 45px;
+	width: 45px;
+}
